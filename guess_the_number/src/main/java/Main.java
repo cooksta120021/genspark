@@ -37,6 +37,7 @@ public class Main {
 
     static boolean playAgain() {
         System.out.println("Would you like to play again? (y or n)");
+        input.nextLine();
         return isPlayAgain(input.nextLine());
     }
 
@@ -59,7 +60,7 @@ public class Main {
         while (true) {
             if (feedback(guessNumber(), secret)) {
                 if (!playAgain()) {
-                    break;
+                break;
                 }
                 secret = randomGen();
             }
