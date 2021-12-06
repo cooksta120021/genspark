@@ -1,17 +1,12 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MainTest {
+    Main main = new Main();
 
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
+    @Test
+    void randomGen() {
     }
 
     @Test
@@ -25,5 +20,9 @@ class MainTest {
     void isPlayAgain() {
         assertEquals(true, Main.isPlayAgain("y"));
         assertEquals(false, Main.isPlayAgain("n"));
+    }
+
+    @Test
+    void main() {
     }
 }
